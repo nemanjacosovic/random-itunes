@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Search iTunes Music Store (FCC / Random Quote Machine)</title>
+		<meta name="Description" content="Free Code Camp exercise built as an iTunes album art machine...">
+		<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:300,400">
+		<link rel="stylesheet" media="all" href="./css/style.css">
+		<link rel="stylesheet" media="all" href="./css/fontello-embedded.css">
+		<link rel="stylesheet" media="all" href="./css/animation.css">
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/script.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<h1>Search iTunes Music Store<small>Demo built on an idea of Random Quote Machine + JSON + API</small></h1>
+			</div>
+			<div id="content">
+				<!-- Search -->
+				<div id="fcc-search">
+					<form>
+						<label for="fcc-search-field">Search iTunes store by entering artist name, song name or album name</label>
+						<input id="fcc-search-field" type="text" value="" placeholder="Search for artist, album or song...">
+						<a id="fcc-search-clear" href="#" title="Clear text"><i>Clear</i><span class="icon-cancel-circled-outline"></span></a>
+						<!-- Button  -->
+						<div id="fcc-search-trigger">
+							<span id="fcc-search-trigger-wrapper"><button disabled="disabled">Search on iTunes <span class="icon-emo-happy"></span></button></span>
+						</div>
+					</form>
+				</div>
+				<!-- Content from API -->
+				<div id="fcc-meta">
+					<!-- Image -->
+					<div id="fcc-meta-img"></div>
+					<!-- Meta -->
+					<div id="fcc-meta-data">
+						<!-- <div id="fcc-meta-data-preview">
+								<audio controls>
+									<source src="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/c9/94/d5/c994d5ed-b369-28da-23bc-dfa921bed1e3/mzaf_5343259928915065458.plus.aac.p.m4a" type="audio/mpeg">
+									Your browser does not support the audio element.
+								</audio>
+							</div> -->
+						<ul>
+							<li id="fcc-meta-data-artist">Artist: <span></span></li>
+							<li id="fcc-meta-data-genre">Genre: <span></span></li>
+							<li id="fcc-meta-data-tracks">Track: <span></span></li>
+							<li id="fcc-meta-data-price">Price: <span></span></li>
+							<li id="fcc-meta-data-buy"><a href="" target="_blank" title="View and buy on iTunes">Buy on iTunes</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<p>&copy; All rights reserved</p>
+		</div>
+	</body>
+</html>
